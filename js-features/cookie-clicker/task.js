@@ -1,7 +1,8 @@
 let clicker__counter = 0;
 
- // document.getElementById("cookie").addEventListener("click", Counter);
+document.getElementById("cookie").onclick = Counter;
 function Counter() {
-   document.getElementById("cookie").width = "300";
-   document.getElementById("clicker__counter").innerHTML = clicker__counter + 1;
+  document.getElementById("cookie").width = "300";
+  clicker__counter ++
+  document.getElementById("clicker__counter").innerHTML = clicker__counter;
 };

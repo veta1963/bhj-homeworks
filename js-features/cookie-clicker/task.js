@@ -1,8 +1,8 @@
-let clickerCounter = 0;
-document.getElementById("cookie").onclick = function () {
-	if (document.getElementById("cookie").width === 300)
-	document.getElementById("cookie").width = "200"
-	else document.getElementById("cookie").width = "300";	
+let clickerCounter = 0 , image = document.getElementById("cookie");
+image.onclick = function () {
+	if (image.width === 300)
+	image.width = "200"
+	else image.width = "300";	
 	clickerCounter ++;
 	document.getElementById("clicker__counter").innerHTML = clickerCounter;
 };
